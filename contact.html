@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <!--fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <!--icons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!--<link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+-->
+    <title>Portfolio Site | Contact</title>
+</head>
+<body>
+    <div class="open-nav close">
+        <?xml version="1.0" ?>
+        <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="50px"
+            id="Layer_1" style="enable-background:new 0 0 32 32; fill: #2f2e41;" version="1.1" viewBox="0 0 32 32"
+            width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+                d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+        </svg>
+    </div>
+    <div class="close-nav close">
+        <?xml version="1.0" ?><svg fill="none" height="50" viewBox="0 0 16 16" width="50"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                d="M5.17157 8.00003L0.585785 3.41424L3.41421 0.585815L8 5.1716L12.5858 0.585815L15.4142 3.41424L10.8284 8.00003L15.4142 12.5858L12.5858 15.4142L8 10.8285L3.41421 15.4142L0.585785 12.5858L5.17157 8.00003Z" />
+        </svg>
+    </div>
+    <div class="downBlur">
+        <nav id="nav">
+            <ul class="menu">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="service.html">Services</a>
+                </li>
+                <li>
+                    <a href="skill.html">Skills</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+                <div class="start-home animation"></div>
+            </ul>
+        </nav>
+    </div>
+
+    <section>
+        <div class="card">
+            <div class="lft-card">
+                <h3>contact <span>us</span></h3>
+            </div>
+            <div class="rgt-card">
+                <form id="form-contact">
+                    <div class="firstName">
+                        <label for="first-name">
+                            <h3>First Name : <span>*</span></h3>
+                        </label>
+                        <input id="first-name" name="name" type="text" placeholder="First Name" required minlength="3">
+                    </div>
+                    <div class="lastName">
+                        <label for="last-name">
+                            <h3>Last Name : <span>*</span></h3>
+                        </label>
+                        <input id="last-name" name="last-name" type="text" placeholder="Last Name" required minlength="3" maxlength="20">
+                    </div>
+                    <div class="email">
+                        <label for="email">
+                            <h3>Email : <span>*</span></h3>
+                        </label>
+                        <input id="email" name="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="phoneNumber">
+                        <label for="phone-number">
+                            <h3>Phone :</h3>
+                        </label>
+                        <input id="phone-number" name="phone" type="tel" pattern="[0][1][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" placeholder="01xxxxxxxxx">
+                        
+                    </div>
+                    <div class="description">
+                        <label for="desc">
+                            <h3>Description : <span>*</span></h3>
+                        </label>
+                        <textarea id="desc" style="resize: none;" name="description" required form="form-contact" maxlength="2000"
+                            placeholder="Your Message" rows="10" cols="50" minlength="200"></textarea>
+                        <div class="char-count">
+                            <h3><span id="counter">0</span> / 2000</h3>
+                        </div>
+                    </div>
+                    <button id="sumbit" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--count character-->
+    <script src="js/contact/contactApp.js"></script>
+
+    <!--<script>
+        const phone = document.querySelector('#phone-number');
+        window.intlTelInput(phone,{});
+    </script>
+    <script src="js/intlTelInput.js"></script>
+-->
+    <footer>
+        <p>&copy; All Copyrights Reserved To MohamedAbdelnasser, Built with HTML,CSS and JS</p>
+    </footer>
+
+    <script src="Nav.js"></script>
+</body>
+</html>
